@@ -1,0 +1,43 @@
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #0d0d0d;
+  --bg-card-dark: #161616;
+  --text-primary: #ffffff;
+  --text-secondary: #a8a8ad;
+  --text-muted: #6e6b79;
+  --accent-primary: #ff1f6d; /* Hot Pink */
+  --accent-secondary: #c8102e; /* Deep Red */
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  --accent-glow: 0 0 20px rgba(255, 31, 109, 0.4);
+  --glass-bg: rgba(13, 13, 13, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --font-sans: 'Outfit', sans-serif;
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-lg: 16px;
+  --radius-sm: 8px;
+
+  /* Layout */
+  --container-max: 1200px;
+  --gutter: clamp(16px, 4vw, 24px);
+  --header-h: 80px;
+  --section-pad: clamp(60px, 9vw, 100px);
+  --grid-gap: clamp(16px, 2.5vw, 30px);
+
+  /* Fluid type scale */
+  --fs-hero: clamp(2rem, 1.2rem + 3.6vw, 3.4rem);
+  --fs-h2: clamp(1.9rem, 1.3rem + 2.6vw, 3rem);
+  --fs-h3: clamp(1.4rem, 1.1rem + 1.2vw, 2rem);
+  --fs-lead: clamp(1rem, 0.95rem + 0.25vw, 1.05rem);
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1320px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-h: 68px;
+  }
+}

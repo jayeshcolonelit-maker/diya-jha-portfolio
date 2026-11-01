@@ -1,0 +1,41 @@
+/* Responsive card grids */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gap);
+}
+
+.card-grid--reels {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reels become a swipeable row on phones */
+  .card-grid--reels {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0 calc(var(--gutter) * -1);
+    padding: 4px var(--gutter) 16px;
+    scrollbar-width: none;
+  }
+
+  .card-grid--reels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card-grid--reels > * {
+    flex: 0 0 72%;
+    scroll-snap-align: center;
+  }
+}

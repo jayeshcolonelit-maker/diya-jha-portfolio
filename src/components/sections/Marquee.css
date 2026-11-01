@@ -1,0 +1,52 @@
+/* Clips the tilted strip so it never causes sideways scrolling */
+.marquee-wrap {
+  overflow: hidden;
+  padding: 18px 0;
+  margin: -18px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  background: var(--accent-gradient);
+  padding: clamp(14px, 2vw, 20px) 0;
+  transform: rotate(-1.2deg);
+  margin: 10px -10px;
+  box-shadow: 0 10px 40px rgba(255, 31, 109, 0.25);
+  z-index: 3;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(18px, 3vw, 34px);
+  padding-right: clamp(18px, 3vw, 34px);
+  font-size: clamp(0.95rem, 0.8rem + 0.7vw, 1.35rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.marquee-dot {
+  font-size: 0.7em;
+  opacity: 0.75;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
