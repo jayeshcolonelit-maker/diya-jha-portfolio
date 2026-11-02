@@ -15,6 +15,9 @@ export const PORTRAITS = {
 };
 
 const photo = (category, name) => `${PHOTOS}/${category}/${name}.jpeg`;
+// For raw uploads that still carry their original export filename
+// (spaces/parentheses and all) rather than a curated slug.
+const rawPhoto = (category, filename) => encodeURI(`${PHOTOS}/${category}/${filename}`);
 
 export const GALLERIES = {
   'product-launches': {
@@ -27,6 +30,9 @@ export const GALLERIES = {
       photo('product-launches', 'krushi-india-launch'),
       photo('product-launches', 'brand-launch'),
       photo('product-launches', 'awas-mela-expo'),
+      rawPhoto('product-launches', 'WhatsApp Image 2026-08-31 at 15.54.30 (1).jpeg'),
+      rawPhoto('product-launches', 'WhatsApp Image 2026-08-31 at 15.54.30.jpeg'),
+      rawPhoto('product-launches', 'WhatsApp Image 2026-08-31 at 15.54.58.jpeg'),
     ],
   },
   'dealer-meets': {
@@ -37,6 +43,9 @@ export const GALLERIES = {
       photo('dealer-meets', 'mp-sales-awards'),
       photo('dealer-meets', 'jk-pride-dealer-meet'),
       photo('dealer-meets', 'pushp-dealer-meet'),
+      rawPhoto('dealer-meets', 'WhatsApp Image 2026-08-31 at 15.53.28 (8).jpeg'),
+      rawPhoto('dealer-meets', 'WhatsApp Image 2026-08-31 at 15.53.29 (11).jpeg'),
+      rawPhoto('dealer-meets', 'WhatsApp Image 2026-08-31 at 15.53.29 (9).jpeg'),
     ],
   },
   'annual-conferences': {
@@ -47,6 +56,22 @@ export const GALLERIES = {
       photo('conferences', 'conference-crowd'),
       photo('conferences', 'conference-hosting'),
       photo('conferences', 'conference-podium'),
+      rawPhoto('conferences', 'WhatsApp Image 2026-08-31 at 15.53.26 (2).jpeg'),
+      rawPhoto('conferences', 'WhatsApp Image 2026-08-31 at 15.53.29 (2).jpeg'),
+      rawPhoto('conferences', 'WhatsApp Image 2026-08-31 at 15.54.30 (2).jpeg'),
+    ],
+  },
+  'live-concerts': {
+    title: 'Live Concerts',
+    desc: 'Managing large venue audiences and building concert-scale hype',
+    cover: `${POSTERS}/live-concert-crowd.jpg`,
+    photos: [
+      rawPhoto('Live concerts', 'WhatsApp Image 2026-08-31 at 15.53.26.jpeg'),
+      rawPhoto('Live concerts', 'WhatsApp Image 2026-08-31 at 15.53.26 (1).jpeg'),
+      rawPhoto('Live concerts', 'WhatsApp Image 2026-08-31 at 15.53.28 (9).jpeg'),
+      rawPhoto('Live concerts', 'WhatsApp Image 2026-08-31 at 15.53.28 (10).jpeg'),
+      rawPhoto('Live concerts', 'WhatsApp Image 2026-08-31 at 15.53.28 (11).jpeg'),
+      rawPhoto('Live concerts', 'WhatsApp Image 2026-08-31 at 15.53.28 (12).jpeg'),
     ],
   },
   'destination-weddings': {
@@ -57,6 +82,25 @@ export const GALLERIES = {
       photo('weddings', 'wedding-lehenga-mic'),
       photo('weddings', 'wedding-saree'),
       `${POSTERS}/wedding-bhaat-ceremony.jpg`,
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (1).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (2).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (3).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (4).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (5).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (6).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (7).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (13).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (14).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (15).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28 (19).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.28.jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.29 (1).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.29 (5).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.29 (6).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.29 (7).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.29 (8).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.29 (10).jpeg'),
+      rawPhoto('weddings', 'WhatsApp Image 2026-08-31 at 15.53.29.jpeg'),
     ],
   },
   'experiential-events': {

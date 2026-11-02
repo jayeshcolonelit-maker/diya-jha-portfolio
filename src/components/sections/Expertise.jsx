@@ -9,7 +9,7 @@ export default function Expertise() {
         <Reveal className="expertise-row">
           <div className="experience-card">
             <div className="experience-badge">
-              <span className="experience-number">10+</span>
+              <span className="experience-number">6+</span>
             </div>
             <p className="experience-label">
               Years of

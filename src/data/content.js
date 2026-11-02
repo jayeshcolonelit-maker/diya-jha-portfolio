@@ -66,7 +66,7 @@ export const STATS = [
   { value: 2000, suffix: '+', label: 'Shows Hosted' },
   { value: 100, suffix: '+', label: 'Brands Associated' },
   { value: 50, suffix: '+', label: 'Cities Covered' },
-  { value: 8, suffix: '', label: 'Sectors Managed' },
+  { value: 20, suffix: '+', label: 'International Clients Managed' },
 ];
 
 // `gallery` opens a photo gallery, `reel` opens a showreel video
@@ -74,9 +74,7 @@ export const CELEBRATION_CARDS = [
   { title: 'Destination Weddings', gallery: 'destination-weddings' },
   {
     title: 'Live Concerts',
-    desc: 'Managing large venue audiences and building concert-scale hype',
-    cover: LIVE_CONCERT_COVER,
-    reel: 'live-concerts',
+    gallery: 'live-concerts',
   },
   { title: 'Experiential Events', gallery: 'experiential-events' },
 ];

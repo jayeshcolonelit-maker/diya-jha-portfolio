@@ -45,7 +45,6 @@ export default function Footer() {
 
       <div className="container footer-bottom">
         <p>&copy; {new Date().getFullYear()} {SITE.name}. All Rights Reserved.</p>
-        <p>Designed for premium events and shows.</p>
       </div>
     </footer>
   );
