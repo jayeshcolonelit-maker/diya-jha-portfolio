@@ -111,8 +111,10 @@
 }
 
 @media (max-width: 768px) {
+  /* Push the button to the right; the empty <nav> would otherwise centre it */
   .hamburger {
     display: block;
+    margin-left: auto;
   }
 
   .nav-menu {
