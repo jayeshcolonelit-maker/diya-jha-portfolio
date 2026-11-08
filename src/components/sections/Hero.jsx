@@ -17,6 +17,8 @@ export default function Hero() {
             I am {SITE.name}
           </p>
           <h1 className="hero-title">
+            {/* Name is visually shown in the eyebrow above; kept here for search engines */}
+            <span className="sr-only">{SITE.name} — </span>
             Professional Emcee
             <br />
             <span className="hero-title-accent">&amp; Event Host</span>

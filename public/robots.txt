@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /media/_unused/
+
+Sitemap: https://diyajha.in/sitemap.xml
