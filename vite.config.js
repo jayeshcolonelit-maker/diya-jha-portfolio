@@ -1,10 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// The site is hosted at https://<user>.github.io/diya-jha-portfolio/,
-// so production builds need that sub-path as the base.
+// GitHub Pages serves the site at https://<user>.github.io/<repo-name>/,
+// so production builds use the repo name as the base path.
+// GITHUB_REPOSITORY ("owner/repo") is set automatically inside GitHub Actions.
+const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'diya-jha-portfolio';
+
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/diya-jha-portfolio/' : '/',
+  base: command === 'build' ? `/${repoName}/` : '/',
   plugins: [react()],
   server: {
     port: 3000,
